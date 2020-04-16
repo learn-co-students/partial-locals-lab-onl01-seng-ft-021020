@@ -2,8 +2,7 @@ require 'rails_helper'
 
 RSpec.describe StudentsController, type: :controller do
   describe 'students#index' do
-    describe 'when passed a search query on the "query" parameter' do
-      render_views
+    describe 'when passed a search query on the "query" parameter' do render_views
 
       it 'only renders items that match the query' do
         b = Faker::Date.between(from: 25.years.ago, to: 18.years.ago)
