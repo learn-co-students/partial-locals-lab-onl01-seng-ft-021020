@@ -4,7 +4,6 @@ class StudentsController < ApplicationController
     @students = Students.all
   end
 
-
   def new
     @student = Student.new
   end
